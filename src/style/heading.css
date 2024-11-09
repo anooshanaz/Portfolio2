@@ -1,0 +1,14 @@
+/* Container styling for the heading */
+.heading-container {
+    text-align: center;          /* equivalent to text-center */
+    font-size: 2.25rem;          /* equivalent to text-4xl */
+    padding-bottom: 2rem;        /* equivalent to pb-8 */
+  }
+  
+  /* Styling for the border and inline block */
+  .heading-title {
+    border-bottom: 4px solid #0e7490;  /* equivalent to border-b-4 and custom cyan color */
+    display: inline-block;            /* equivalent to inline-block */
+    padding-bottom: 0.5rem;           /* equivalent to pb-2 */
+  }
+  

@@ -1,35 +1,32 @@
 import React from 'react'
 import Image from 'next/image'
 import { DiVim } from 'react-icons/di'
-interface propsType{
-    title:string
-    desc:string
-    img: string
-    tags:string[]
+import "../style/card.css"
+
+interface propsType {
+  title: string;
+  desc: string;
+  img: string;
+  tags: string[];
 }
 
-const Card:React.FC<propsType>= ({title,desc,img,tags}) => {
+const Card: React.FC<propsType> = ({ title, desc, img, tags }) => {
   return (
-    <div className=' border border-purple-700 w-[300px] sm:w-[350px]' data-aos="zoom-in-up">
-    <div>
-    <Image className='w-[350px] sm:w-[350px] h-60'
-    src={img}
-    width={350}
-    height={350}
-    alt={title}/>
-    </div>
-    <div className='p-4 space-y-4'>
-        <div className='text-4xl font-extralight'>{title}</div>
+    <div className="card-container" data-aos="zoom-in-up">
+      <div>
+        <Image className="card-image" src={img} width={350} height={350} alt={title} />
+      </div>
+      <div className="card-content">
+        <div className="card-title">{title}</div>
         <div>{desc}</div>
-        <div>
-           {tags.map((el) => (
-            <div className='tag' key={el}>{el}</div>
-           ))}
+        <div className="card-tags">
+          {tags.map((el) => (
+            <div className="card-tag" key={el}>{el}</div>
+          ))}
         </div>
+      </div>
     </div>
-    </div>
-      
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

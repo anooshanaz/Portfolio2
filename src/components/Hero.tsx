@@ -1,23 +1,23 @@
 import React from 'react'
 import Navbar from './Navbar'
+import "../style/hero.css"
 
 const Hero = () => {
   return (
-    <div id='hero' className='min-h-screen bg-no-repeat bg-[url(/images.jpg)] bg-left lg:bg-[15%] bg-cover'
-    style={{backgroundSize:"35%"}}>
-      <Navbar/>
-      <div className='container grid lg:grid-cols-2 h-[calc(100vh-600px)]'>
-        <div className='hidden lg:block'></div>
-        <div className='text-[80px] sm:text-[100px] font-bold leading-tight flex justify-center items-center mt-20'>
+    <div id="hero" className="hero-container">
+      <Navbar />
+      <div className="hero-grid">
+        <div className="hidden lg:block"></div>
+        <div className="hero-text">
           <div>
-            <p data-aos="zoom-in-up" className='text-cyan-600'>I'm</p>
-            <p data-aos="zoom-in-up" className='text-white'>Anoosha</p>
-            <p data-aos="zoom-in-up" className='text-cyan-600'>Naz</p>
+            <p data-aos="zoom-in-up" className="hero-text-cyan">I'm</p>
+            <p data-aos="zoom-in-up" className="hero-text-white">Anoosha</p>
+            <p data-aos="zoom-in-up" className="hero-text-cyan">Naz</p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

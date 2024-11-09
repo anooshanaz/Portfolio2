@@ -1,10 +1,12 @@
 import React from 'react'
+import "../style/footer.css"
 
 const Footer = () => {
   return (
-    <div className='mt-16 py-16 text-center text-white bg-cyan-600'>
+    <div className="footer">
         @ Anoosha | All rights reserved 2024
     </div>
-  )
-}
+  );
+};
+
 export default Footer

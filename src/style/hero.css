@@ -1,0 +1,53 @@
+/* Hero container styling */
+.hero-container {
+    min-height: 100vh;                          /* equivalent to min-h-screen */
+    background-image: url('/images1.png');      /* equivalent to bg-[url(/images1.png)] */
+    background-repeat: no-repeat;               /* equivalent to bg-no-repeat */
+    background-position: left;                  /* equivalent to bg-left */
+    background-size: 35%;                       /* Custom background size equivalent to style={{backgroundSize:"35%"}} */
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-container {
+      background-position: 15%;                 /* equivalent to lg:bg-[15%] */
+    }
+  }
+  
+  /* Container grid styling */
+  .hero-grid {
+    display: grid;
+    height: calc(100vh - 600px);                 /* equivalent to h-[calc(100vh-600px)] */
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-grid {
+      grid-template-columns: repeat(2, 1fr);    /* equivalent to lg:grid-cols-2 */
+    }
+  }
+  
+  /* Text styling */
+  .hero-text {
+    font-size: 3.75rem;                         /* equivalent to text-[60px] */
+    font-weight: bold;                          /* equivalent to font-bold */
+    line-height: 1.25;                          /* equivalent to leading-tight */
+    display: flex;
+    justify-content: center;                    /* equivalent to justify-center */
+    align-items: center;                        /* equivalent to items-center */
+    margin-top: 5rem;                           /* equivalent to mt-20 */
+  }
+  
+  @media (max-width: 639px) {
+    .hero-text {
+      font-size: 5rem;                          /* equivalent to sm:text-[80px] */
+    }
+  }
+  
+  /* Text color styling */
+  .hero-text-cyan {
+    color: #0e7490;                             /* equivalent to text-cyan-600 */
+  }
+  
+  .hero-text-white {
+    color: white;                               /* equivalent to text-white */
+  }
+  

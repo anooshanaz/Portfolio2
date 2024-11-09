@@ -1,0 +1,53 @@
+/* Container styling */
+.contact-container {
+    padding-top: 8rem;          /* equivalent to pt-32 */
+    max-width: 90%;            /* equivalent to container in Tailwind */
+    margin: 0 auto;
+  }
+  
+  /* Grid styling */
+  .contact-grid {
+    display: grid;
+    gap: 2.5rem;                /* equivalent to gap-10 */
+  }
+  
+  .contact-heading {
+    font-size: 3rem;            /* equivalent to text-5xl */
+    color: #0e7490;             /* equivalent to text-cyan-600 */
+  }
+  
+  .contact-text {
+    color: #4b5563;             /* equivalent to text-gray-600 */
+    font-size: 18px;            /* equivalent to text-[18px] */
+    padding-top: 0.5rem;        /* equivalent to pt-2 */
+  }
+  
+  .icon-text {
+    display: flex;
+    gap: 0.75rem;               /* equivalent to gap-3 */
+    align-items: center;        /* equivalent to items-center */
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;               /* equivalent to gap-1 */
+  }
+  
+  .input-field, .textarea-field {
+    height: 40px;               /* equivalent to h-[40px] */
+    background-color: transparent;
+    border: 1px solid #7e22ce;  /* equivalent to border-purple-700 */
+  }
+  
+  .textarea-field {
+    height: auto;               /* Override height for textarea */
+  }
+  
+  .submit-button {
+    background-color: #0e7490;  /* equivalent to bg-cyan-600 */
+    color: white;
+    width: 8rem;                /* equivalent to w-32 */
+    border: 1px solid #a1a1aa;  /* equivalent to border-r-zinc-300 */
+  }
+  

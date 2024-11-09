@@ -1,0 +1,28 @@
+/* Container styling */
+.about-container {
+    padding-top: 8rem;      /* equivalent to pt-32 */
+    max-width: 90%;        /* equivalent to container in Tailwind */
+    margin: 0 auto;
+  }
+  
+  /* Grid styling */
+  .about-grid {
+    display: grid;
+    gap: 5rem;              /* equivalent to gap-20 */
+    align-items: center;
+  }
+  
+  .about-heading {
+    font-size: 2.25rem;     /* equivalent to text-4xl */
+    color: #0e7490;         /* equivalent to text-cyan-600 */
+  }
+  
+  .about-heading-md {
+    font-size: 3rem;        /* equivalent to md:text-5xl */
+  }
+  
+  .about-text {
+    color: #6b7280;         /* equivalent to text-gray-500 */
+    padding-top: 0.5rem;    /* equivalent to pt-2 */
+  }
+  
